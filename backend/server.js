@@ -3,6 +3,12 @@ const express = require('express');
 const app = express();
 
 const dbconfig = require('./db')
+const roomsrouters = require('./routes/roomsroutes')
+
+
+
+app.use('/api/rooms',roomsrouters)
+
 
 
 

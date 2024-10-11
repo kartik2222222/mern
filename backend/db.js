@@ -15,6 +15,8 @@ connection.on('error',() => {
 connection.on('connected', () => {
     console.log("connected sussefully to mongodb")
 })
-
+connection.once('open', () => {
+    console.log('MongoDB database connection established successfully');
+});
 module.exports = mongoose;
 //mongodb+srv://karthikshivakumar3231:Ragu@1243@cluster0.tyk5p.mongodb.net/karthikdb

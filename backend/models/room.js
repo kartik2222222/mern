@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const { Collection } = require("../db");
 
 
 const roomschema = mongoose.Schema({
@@ -31,8 +32,11 @@ const roomschema = mongoose.Schema({
     }
 },{
     timestamps: true
+   
+    
+
 })
 
 
-const roommodel = mongoose.model('sample',roomschema)
+const roommodel = mongoose.model('rooms',roomschema)
 module.exports = roommodel
