@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Rooms from './components/Rooms';
 import Nav from './components/Nav';
@@ -9,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Nav/>
-      <Rooms/>
+      
       <BrowserRouter>
       <Routes>
 
